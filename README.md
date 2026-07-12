@@ -95,6 +95,3 @@ Student | Web Developer
 
 📍 Andhra Pradesh, India
 
-⭐ Support
-
-If you found this project helpful or inspiring, please consider giving this repository a ⭐ Star on GitHub. Your support is greatly appreciated.
