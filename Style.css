@@ -1,1 +1,221 @@
 
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#090b1f;
+    color:#fff;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#11152e;
+    z-index:100;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8b5cf6;
+}
+
+/* Sections */
+
+section{
+    min-height:100vh;
+    padding:100px 8%;
+}
+
+/* Home */
+
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.home h1{
+    font-size:60px;
+}
+
+.home h2{
+    color:#8b5cf6;
+    margin:10px 0;
+}
+
+.home p{
+    margin:20px 0;
+    color:#ccc;
+}
+
+.home-img img{
+    width:320px;
+    border-radius:50%;
+    border:5px solid #8b5cf6;
+    box-shadow:0 0 30px #8b5cf6;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#8b5cf6;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#6d28d9;
+}
+
+/* Titles */
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#141933;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #8b5cf6;
+}
+
+/* Skills */
+
+#skills .card{
+    font-size:20px;
+    font-weight:600;
+}
+
+/* CERTIFICATES */
+  .cert-list{display:flex;flex-direction:column;gap:18px;max-width:950px;}
+  .cert-card{
+    background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);
+    padding:20px 24px;display:flex;align-items:center;gap:18px;transition:.25s;
+  }
+  .cert-card:hover{border-color:var(--purple);transform:translateX(4px);}
+  .cert-badge{
+    width:52px;height:52px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:1.1rem;color:#fff;
+  }
+  .cert-card h3{font-size:1.05rem;color:var(--purple-light);margin-bottom:4px;}
+  .cert-card p{color:var(--text-dim);font-size:.9rem;}
+  
+/* ACHIEVEMENTS */
+  .ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .ach-card{
+    background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);
+    padding:34px 24px;text-align:center;transition:.25s;
+  }
+  .ach-card:hover{border-color:var(--purple);transform:translateY(-6px);}
+  .ach-badge{
+    width:56px;height:56px;border-radius:12px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:1.3rem;color:#fff;
+  }
+  .ach-card h3{font-size:1.1rem;margin-bottom:8px;}
+  .ach-card p{color:var(--text-dim);font-size:.9rem;}
+
+/* Contact */
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    color:#fff;
+    font-size:24px;
+    margin:0 10px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#8b5cf6;
+}
+
+/* Footer */
+
+footer{
+    background:#11152e;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:10px;
+}
+
+.home{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.home h1{
+    font-size:42px;
+}
+
+.home-img img{
+    width:220px;
+}
+
+section{
+    padding:120px 6%;
+}
+
+    }
